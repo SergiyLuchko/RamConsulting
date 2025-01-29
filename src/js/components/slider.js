@@ -18,7 +18,7 @@ const swiper1 = new Swiper(".hero-mini", {
   spaceBetween: 20,
   druggable:true,
   noSwiping: false,
-  draggable:3,
+
   loop:true,
 
 
