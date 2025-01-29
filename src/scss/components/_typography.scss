@@ -1,14 +1,26 @@
 %heading {
+  margin: 0;
+  font-weight: 600;
+  color: var(--pam-color5);
 }
 
 .heading-1 {
   @extend %heading;
+  font-size: 36px;
+  line-height: 111%;
+  text-transform: uppercase;
 }
 .heading-2 {
   @extend %heading;
+  font-size: 28px;
+  line-height: 114%;
+  text-transform: uppercase;
 }
 .heading-3 {
   @extend %heading;
+  font-size: 20px;
+  line-height: 160%;
+  color: var(--pam-color1);
 }
 .heading-4 {
   @extend %heading;

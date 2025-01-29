@@ -1,2 +1,2 @@
-console.log('components');
-// import './components/slider.js';
+// console.log('components');
+import './components/slider.js';

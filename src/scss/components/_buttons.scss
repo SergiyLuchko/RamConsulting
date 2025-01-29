@@ -1,0 +1,70 @@
+%btn {
+  border: 1px solid transparent;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 160%;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  &:active {
+    transform: translateY(3px);
+  }
+  &:focus {
+    outline: none;
+  }
+  &:focus-visible {
+    outline: 2px solid var(--pam-color1);
+    outline-offset: 2px;
+  }
+}
+
+.btn-find {
+  @extend %btn;
+  border-radius: 88px;
+  padding: 16px 22px;
+  color: var(--pam-color1);
+  box-shadow: 0 4px 35px 0 rgba(255, 185, 175, 0.3);
+  background: linear-gradient(152deg, #ffeb80 0%, #fdbfa3 100%);
+  @include hover {
+    border: 1px solid var(--pam-color3);
+    color: var(--pam-color3);
+    box-shadow: 0 4px 35px 0 rgba(255, 185, 175, 0.3);
+    background: linear-gradient(90deg, #6d31d0 0%, #ab80ef 100%);
+  }
+}
+
+.btn-get {
+  @extend %btn;
+
+  border-radius: 30px;
+  padding: 9px 24px;
+  color: var(--pam-color1);
+  box-shadow: 0 14px 23px 0 rgba(28, 37, 44, 0.08);
+  background: var(--pam-color3);
+
+  @include hover {
+    border: 1px solid var(--pam-color3);
+    border-radius: 88px;
+    padding: 8px 26px;
+    color: var(--pam-color3);
+    box-shadow: 0 4px 35px 0 rgba(255, 185, 175, 0.3);
+    background: linear-gradient(90deg, #6d31d0 0%, #ab80ef 100%);
+  }
+}
+.btn-submit {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  text-align: center;
+  color: var(--pam-color1);
+  border-radius: 30px;
+  padding: 14px 34px;
+  box-shadow: 0 14px 23px 0 rgba(28, 37, 44, 0.08);
+  background: var(--pam-color3);
+
+  @include hover {
+    border: 1px solid var(--pam-color3);
+    box-shadow: 0 14px 23px 0 rgba(28, 37, 44, 0.08);
+    background: linear-gradient(180deg, #828cde 0%, #6d31d0 100%);
+    color: var(--pam-color3);
+  }
+}
