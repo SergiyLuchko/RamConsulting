@@ -1,0 +1,114 @@
+.map {
+  background-color: #fffcf3;
+  padding: 30px 0;
+  &__content {
+  }
+
+  &__title-box {
+  }
+  &__controls {
+    padding-top: 60px;
+  }
+  &__title {
+    margin-bottom: var(--offset-min-1);
+    color: var(--pam-color1);
+  }
+
+  &__descr {
+    margin: 0;
+    margin-bottom: 5px;
+    color: var(--pam-color5);
+  }
+
+  &__image {
+    position: relative;
+  }
+
+  &__img {
+  }
+}
+
+.map-tab {
+  &__content {
+    max-width: 480px;
+    padding-bottom: 28px;
+    border-radius: 12px;
+    background-color: var(--pam-color6);
+    box-shadow: 13px 15px 13px 0 rgba(0, 0, 0, 0.04);
+  }
+
+  &__images {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 11px;
+  }
+
+  &__img {
+  }
+
+  &__info {
+    max-width: 380px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    margin: 0;
+    &:not(:last-child) {
+      margin-bottom: var(--offset-min-1);
+    }
+  }
+  &__btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    color: var(--pam-color5);
+    text-transform: uppercase;
+    position: absolute;
+    z-index: 100;
+    &--limassol {
+      color: var(--pam-color6);
+      left: 131px;
+      bottom: 57px;
+    }
+    &--larnaka {
+      left: 245px;
+      bottom: 80px;
+    }
+    &--paphos {
+      color: var(--pam-color6);
+      left: 38px;
+      bottom: 84px;
+    }
+    &--nicosia {
+      left: 160px;
+      bottom: 145px;
+    }
+  }
+}
+.tabs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+
+  &__nav {
+  }
+
+  &__nav-item {
+  }
+
+  &__nav-btn {
+  }
+
+  &__content {
+  }
+
+  &__panel {
+  }
+}
