@@ -122,8 +122,10 @@
 .hero-slider__pagination.swiper-pagination-bullets .swiper-pagination-bullet {
   border: 1px solid #fff;
   background-color: transparent;
-  width: 13px;
-  height: 13px;
+  --swiper-pagination-bullet-size: 13px;
+  --swiper-pagination-bullet-width: 13px;
+  --swiper-pagination-bullet-height: 13px;
+  --swiper-pagination-bullet-horizontal-gap: 8px;
   opacity: 1;
 }
 .hero-slider__pagination.swiper-pagination-bullets

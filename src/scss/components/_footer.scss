@@ -1,0 +1,24 @@
+.footer {
+  padding: 40px 0;
+  background: var(--pam-color2);
+  text-align: center;
+  color: var(--pam-color6);
+  &__content {
+  }
+
+  &__copy {
+  }
+
+  &__sep {
+    display: inline-block;
+    margin: 0 10px;
+    &--1 {
+    }
+  }
+
+  &__link {
+    color: inherit;
+  }
+}
+.container {
+}

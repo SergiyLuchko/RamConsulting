@@ -1,0 +1,32 @@
+.partners {
+  padding: var(--offset-sect) 0;
+  background: var(--pam-color6);
+  &__title {
+    text-align: center;
+    margin-bottom: var(--offset-med);
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+  }
+
+  &__item {
+  }
+
+  &__link {
+    filter: grayscale(0);
+    transition: filter 0.3s ease-in-out;
+    @include hover {
+      filter: grayscale(1);
+    }
+  }
+
+  &__img {
+  }
+}
+.container {
+}
+.list-reset {
+}
