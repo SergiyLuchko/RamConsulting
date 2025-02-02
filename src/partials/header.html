@@ -4,7 +4,7 @@
       <a href="#!" class="header__logo">
         <img src="img/logo.png" alt="Ram logo" class="header__logo-img">
       </a>
-      <nav class="nav">
+      <nav class="nav" data-menu>
         <ul class="nav__list list-reset">
           <li class="nav__item">
             <a href="#!" class="nav__link">
@@ -20,6 +20,23 @@
             <a href="#!" class="nav__link nav__link--services">
               Services
             </a>
+            <ul class="dropdown list-reset">
+              <li class="dropdown__item">
+                <a href="#!" class="dropdown__link">
+                  Investments opportunities
+                </a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#!" class="dropdown__link">
+                  Business relocation
+                </a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#!" class="dropdown__link">
+                  Family relocation
+                </a>
+              </li>
+            </ul>
           </li>
           <li class="nav__item">
             <a href="#!" class="nav__link">
@@ -40,6 +57,9 @@
       </nav>
       <button class="header__btn btn-get btn-reset">
         Get in touch
+      </button>
+      <button class="burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+        <span class="burger__line"></span>
       </button>
     </div>
   </div>

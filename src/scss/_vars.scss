@@ -21,4 +21,7 @@
   --offset-min: 25px;
   --offset-med: 60px;
   --offset-sect: 80px;
+  @include small-tablet {
+    --offset-sect: 60px;
+  }
 }

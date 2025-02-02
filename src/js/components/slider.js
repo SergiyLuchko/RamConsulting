@@ -17,11 +17,24 @@ const swiper1 = new Swiper(".hero-mini", {
   slidesPerView:4,
   spaceBetween: 20,
   druggable:true,
-  noSwiping: false,
-
-  loop:true,
 
 
+  loop:false,
 
+
+  breakpoints: {
+    // // when window width is >= 320px
+    320: {
+      slidesPerView: 2,
+
+    },
+
+
+    // when window width is >= 800px
+    800: {
+      slidesPerView: 4,
+
+    }
+  }
 
 });

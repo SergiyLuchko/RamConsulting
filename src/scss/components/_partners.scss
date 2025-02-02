@@ -10,9 +10,30 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 20px;
+    @include tablet {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 60px 20px;
+    }
+    @include small-tablet {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @include mobile {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px 20px;
+    }
   }
 
   &__item {
+    @include tablet {
+      &:nth-child(5) {
+        grid-column: 2/3;
+      }
+    }
+    @include mobile {
+      &:nth-child(5) {
+        grid-column: initial;
+      }
+    }
   }
 
   &__link {

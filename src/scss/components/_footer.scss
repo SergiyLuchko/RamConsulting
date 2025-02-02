@@ -19,6 +19,8 @@
   &__link {
     color: inherit;
   }
-}
-.container {
+  @include mobile {
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
 }

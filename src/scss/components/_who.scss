@@ -5,6 +5,9 @@
     display: flex;
     justify-content: space-between;
     gap: 44px;
+    @include tablet {
+      flex-direction: column;
+    }
   }
 
   &__info {
@@ -12,6 +15,7 @@
 
   &__title-box {
     position: relative;
+    margin-bottom: var(--offset-min);
     &::after {
       content: "";
       position: absolute;
@@ -20,12 +24,22 @@
       height: 4px;
       width: 100%;
       background-color: var(--pam-color4);
+      @include tablet {
+        max-width: 600px;
+      }
+      @include mobile {
+        display: none;
+      }
     }
   }
 
   &__title {
-    margin-bottom: var(--offset-min);
     color: var(--pam-color6);
+    @include mobile {
+      max-width: 280px;
+      padding-bottom: 4px;
+      border-bottom: 4px solid var(--pam-color4);
+    }
   }
 
   &__descr {
@@ -44,6 +58,9 @@
   }
 
   &__founder {
+    @include tablet {
+      align-self: center;
+    }
   }
 
   &__card {

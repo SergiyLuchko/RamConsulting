@@ -1,6 +1,4 @@
 .hero {
-  width: 100vw;
-
   // overflow-y: hidden;
   &__content {
   }
@@ -25,7 +23,7 @@
   }
   &__links {
     position: absolute;
-    bottom: 0;
+    bottom: 60px;
   }
   &__links-title {
     margin: 0;
@@ -50,6 +48,14 @@
   &__info {
     max-width: 560px;
     padding-top: 130px;
+
+    @include small-tablet {
+      padding-top: 40px;
+    }
+    @include mobile {
+      width: 100%;
+      text-align: center;
+    }
   }
 
   &__box {
@@ -59,6 +65,14 @@
   &__list {
     display: flex;
     align-items: center;
+    @include small-tablet {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+    @include mobile {
+      gap: 10px;
+    }
   }
 
   &__item {
@@ -116,8 +130,14 @@
   top: var(--swiper-pagination-top, auto);
   left: 47%;
   width: 100%;
-
   transform: rotate(90deg);
+  @include mobile {
+    bottom: 20px;
+    top: auto;
+    left: 0;
+    width: 100%;
+    transform: none;
+  }
 }
 .hero-slider__pagination.swiper-pagination-bullets .swiper-pagination-bullet {
   border: 1px solid #fff;
@@ -137,8 +157,6 @@
   max-width: 800px;
   width: 100%;
   &__link {
-    width: 144px;
-    height: 180px;
     display: inline-flex;
     flex-direction: column;
     border: 2px solid var(--pam-color6);
@@ -160,5 +178,8 @@
     font-size: 20px;
     line-height: 160%;
     color: var(--pam-color2);
+  }
+  @include small-tablet {
+    max-width: 300px;
   }
 }

@@ -59,9 +59,8 @@
   }
 
   &__form-wrap {
-    padding: 34px 0;
     border-radius: 60px;
-
+    padding: 35px 10px;
     background: rgba($color: #ffdb80, $alpha: 0.5);
   }
 
@@ -74,6 +73,7 @@
 .form {
   max-width: 580px;
   margin: 0 auto;
+
   text-align: center;
   &__input-box {
     display: flex;

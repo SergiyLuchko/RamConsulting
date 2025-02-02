@@ -18,9 +18,13 @@
   position: relative;
   &__slide {
     max-width: 380px;
+
     border-radius: 20px;
     box-shadow: 0 14px 23px 0 rgba(28, 37, 44, 0.08);
     background: var(--pam-color6);
+    @include small-tablet {
+      margin: 0 auto;
+    }
   }
 
   &__image {
