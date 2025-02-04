@@ -1,0 +1,18 @@
+.about-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--offset-sect) 0;
+  background-color: rgba($color: #6d31d0, $alpha: 0.8);
+  &__content {
+    max-width: 780px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--offset-min);
+  }
+
+  &__text {
+    margin: 0;
+    color: var(--pam-color6);
+  }
+}

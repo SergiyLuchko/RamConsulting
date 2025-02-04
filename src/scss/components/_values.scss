@@ -1,4 +1,4 @@
-.how {
+.values {
   padding: var(--offset-sect) 0;
   background: linear-gradient(180deg, #fefc9e 0%, #fdbfa3 78.65%);
   &__title {
@@ -17,6 +17,9 @@
       grid-template-columns: repeat(2, 1fr);
       gap: 60px 20px;
       justify-items: center;
+    }
+    @include mobile {
+      grid-template-columns: 1fr;
     }
   }
 
