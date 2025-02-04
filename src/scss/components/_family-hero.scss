@@ -1,0 +1,64 @@
+.family-hero {
+  position: relative;
+  min-height: 530px;
+  background-image: url("../img/family/family-hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: 10% 0%;
+  background-size: cover;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 710px;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      #fff 62.06%,
+      rgba(255, 255, 255, 0.77) 78.73%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    z-index: 0;
+    @include tablet {
+      inset: 0;
+      height: 30%;
+      transform: rotate(180deg);
+      background: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        color-stop(62.06%, #fff),
+        color-stop(78.73%, rgba(255, 255, 255, 0.77)),
+        to(rgba(255, 255, 255, 0))
+      );
+      background: linear-gradient(
+        0deg,
+        #fff 62.06%,
+        rgba(255, 255, 255, 0.77) 78.73%,
+        rgba(255, 255, 255, 0) 100%
+      );
+    }
+  }
+
+  &__content {
+    position: relative;
+    z-index: 1;
+    max-width: 710px;
+    min-height: 530px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include tablet {
+      padding-top: 100px;
+      max-width: 100%;
+      align-items: start;
+    }
+  }
+
+  &__title {
+    text-transform: initial;
+  }
+  @include tablet {
+    background-position: center;
+  }
+}

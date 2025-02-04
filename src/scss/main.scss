@@ -26,4 +26,14 @@
 @import "./components/about-info";
 @import "./components/about-work";
 @import "./components/values";
+
+// migration-page
+@import "./components/migration-hero";
+@import "./components/migration";
+@import "./components/migration-help";
+
+// family-page
+@import "./components/family-hero";
+@import "./components/family";
+
 @import "./components/footer";
